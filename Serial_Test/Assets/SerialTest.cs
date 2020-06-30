@@ -85,7 +85,7 @@ public class SerialTest : MonoBehaviour
 
             Cube.transform.rotation = Quaternion.Euler(-InputData.Rx, -InputData.Rz, InputData.Ry); //데이터 값에 맞춰서 Cube 회전
 
-            #region 주석
+            #region 주석 (기존 -> 하드웨어팀에게 넘겼음)
             //Debug.Log("Left = "+ InputData.isLeftButtonCliked + ", Right = " + InputData.isRightButtonCliked + ", Rx = " + InputData.Rx + ", Ry = " + InputData.Ry + ", Rz = " + InputData.Rz);
             //InputData.Ax = data[2];
             //InputData.Ay = data[3];
@@ -106,7 +106,7 @@ public class SerialTest : MonoBehaviour
         sp.Close(); // 프로그램 종료시 포트 닫기
     }
 
-    #region 주석
+    #region 주석(raw data 가공, 상보 필터를 통해 보정 -> 하드웨어팀에게 넘겼음)
     //void Calc_Rotation()
     //{
     //    int ax = data[2], ay = data[3], az = data[4];
